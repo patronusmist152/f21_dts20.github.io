@@ -1,0 +1,105 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	padding: 30px 10%;
+	height: 88px;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.075);
+}
+
+.logo-container,
+.nav-links,
+.header-right{
+	display: flex;
+}
+
+.logo-container h4{
+	font-weight: normal;
+	padding: 24px 0;
+	font-size: 24px;
+}
+
+.logo-container {
+	flex: 1;
+}
+
+.header-right {
+	flex: 2;
+}
+nav{
+	flex: 3;
+	padding: 8px 0;
+}
+
+.logo {
+	height: 80px;
+	width: 80px;
+	font-weight: 400;
+}
+
+.nav-link {
+	margin: 0 32px;
+	list-style: none;
+	cursor: pointer;
+}
+
+.nav-links li a {
+	transition: all 0.3s ease 0s;
+	color: rgba(93,92,100,1.0);
+}
+
+.nav-links li a:hover {
+	color: rgba(238, 67, 116, 1);
+}
+
+.btn {
+	padding: 8px 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.btn-sign-up {
+	font-size: 14px;
+	border-color: rgba(238, 67, 116, 1);
+	color: rgba(238, 67, 116, 1);
+}
+
+.btn-sign-up:hover {
+	background-color: rgba(238, 67, 116, 1);
+	border-color: transparent;
+	transition: all 0.3s ease 0s;
+	color: white;
+}
+
+.btn-sign-in {
+	background-color: rgba(238, 67, 116, 1);
+	color: white;
+	border: none;
+	margin-left: 16px;
+	font-size: 14px;
+}
+
+.btn-sign-in:hover{
+	transition: all 0.3s ease 0s;
+	background-color: rgba(226,11,73,0.8);
+}
+
+.header-right{
+	justify-content: flex-end;
+}
