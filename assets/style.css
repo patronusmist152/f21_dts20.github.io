@@ -15,7 +15,7 @@ a {
 
 header {
 	display: flex;
-	padding: 30px 10%;
+	padding: 30px 5%;
 	height: 88px;
 	align-items: center;
 	justify-content: space-between;
@@ -30,6 +30,10 @@ header {
 .nav-links,
 .header-right{
 	display: flex;
+}
+
+.nav-links{
+	margin-left: 16px;
 }
 
 .logo-container h4{
@@ -57,7 +61,7 @@ nav{
 }
 
 .nav-link {
-	margin: 0 32px;
+	margin: 0 16px;
 	list-style: none;
 	cursor: pointer;
 	padding: 30px 0px;
