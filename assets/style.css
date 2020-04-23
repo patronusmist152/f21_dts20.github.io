@@ -13,11 +13,9 @@ a {
 	text-decoration: none;
 }
 
-@media(max-width: 1024px) {
-	.img-front{
-		/* height: 165px; */
-		margin-left: -5%;
-
+@media screen and (max-width: 768px) {
+	.intro-text h1{
+		font-size: 2px;
 	}
 }
 
@@ -141,7 +139,7 @@ nav{
 }
 
 main {
-	/* background-color: #F6F6F9; */
+	background-color: #F6F6F9;
 	height: 768px;
 	padding-top: 128px;
 	padding-left: 5%;
