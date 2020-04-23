@@ -13,6 +13,12 @@ a {
 	text-decoration: none;
 }
 
+@media(max-width: 1024px) {
+	.img-front{
+		height: 165px;
+	}
+}
+
 header {
 	display: flex;
 	padding: 30px 5%;
@@ -133,9 +139,30 @@ nav{
 }
 
 main {
-	background-color: white;
-	height: 720px;
-	z-index: 1;
-	position: relative;
+	background-color: #F6F6F9;
+	height: 768px;
+	/* z-index: 1; */
+	/* position: relative; */
 	padding-top: 128px;
-  }
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.content{
+	display: flex;
+}
+
+.introduction{
+
+}
+
+.cover {
+	border: 1px solid red;
+	display: flex;
+}
+.img-front{
+	/* position: absolute; */
+}
+.img-back{
+	/* position: absolute; */
+}
