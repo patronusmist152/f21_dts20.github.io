@@ -24,6 +24,13 @@ header {
 	align-items: center;
 	justify-content: space-around;
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.075);
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+
+header nav {
+	display: flex;
 }
 
 .logo-container {
@@ -63,6 +70,11 @@ nav ul a{
 
 nav ul a:hover {
 	color: salmon;
+}
+
+#toggle-mobile {
+	display: none;
+	z-index: 98;
 }
 
 .btn-group {
@@ -123,7 +135,10 @@ nav ul a:hover {
 
 
 /* Ukuran tablet puyer */
-@media screen and (max-width: 791px) {
+@media screen and (max-width: 900px) {
+	#toggle-mobile {
+		display: flex;
+	}
 	.menu-toggle button {
 		display: block;
 	}
@@ -131,6 +146,10 @@ nav ul a:hover {
 	header {
 		justify-content: space-between;
 		padding: 16px 5%;
+	}
+
+	header nav {
+	display: flex;
 	}
 
 	nav {
@@ -143,12 +162,12 @@ nav ul a:hover {
 		top: 60px;
 		align-items: center;
 		justify-content: space-evenly;
-		z-index: 0;
 		padding: 0 0 200px;
 		box-shadow: -4px 0 20px rgba(0, 0, 0, 0.075);
 		transform: translateX(100%);
 		animation: slide-out 0.5s;
 	}
+
 	nav ul {
 		flex-direction: column;
 		height: 30vh;
