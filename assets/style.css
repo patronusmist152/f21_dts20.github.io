@@ -16,7 +16,6 @@ ul, ol, a{
 }
 
 /* header dari sini */
-
 header {
 	display: flex;
 	background-color: rgb(255, 255, 255);
@@ -114,6 +113,14 @@ nav ul a:hover {
 	font-size: 24px;
 }
 
+/* Home */
+
+/* Ekstra 1 */
+
+/* Ekstra 2 */
+
+/* Footer */
+
 
 /* Ukuran tablet puyer */
 @media screen and (max-width: 791px) {
@@ -130,13 +137,13 @@ nav ul a:hover {
 		position: absolute;
 		right: 0;
 		flex-direction: column;
-		/* background-color: black; */
+		background-color: white;
 		height: 100vh;
 		width: 40%;
 		top: 60px;
 		align-items: center;
 		justify-content: space-evenly;
-		z-index: -1;
+		z-index: 0;
 		padding: 0 0 200px;
 		box-shadow: -4px 0 20px rgba(0, 0, 0, 0.075);
 		transform: translateX(100%);
