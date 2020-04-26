@@ -132,7 +132,39 @@ nav ul a:hover {
 /* Ekstra 2 */
 
 /* Footer */
+footer {
+    display: block;
+  	background-color: white;
+ 	border-top: 1px solid #eee;
+  	height: 55px;
+	width: 100%;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+ 	font-size: 13px;
+}
 
+.left-footer {
+  float: left;
+}
+
+.right-footer {
+  float: right;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline-block;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
 
 /* Ukuran tablet puyer */
 @media screen and (max-width: 900px) {
