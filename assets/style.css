@@ -16,7 +16,6 @@ ul, ol, a{
 }
 
 /* header dari sini */
-
 header {
 	display: flex;
 	background-color: rgb(255, 255, 255);
@@ -25,6 +24,13 @@ header {
 	align-items: center;
 	justify-content: space-around;
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.075);
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+
+header nav {
+	display: flex;
 }
 
 .logo-container {
@@ -64,6 +70,11 @@ nav ul a{
 
 nav ul a:hover {
 	color: salmon;
+}
+
+#toggle-mobile {
+	display: none;
+	z-index: 98;
 }
 
 .btn-group {
@@ -114,9 +125,135 @@ nav ul a:hover {
 	font-size: 24px;
 }
 
+/* Home */
+main {
+	/* background-color: #F6F6F9; */
+	height: 688px;
+	padding-top: 128px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.content{
+	display: flex;
+	margin-top: 40px;
+}
+
+.introduction{
+	/* border: 1px solid red; */
+	margin-right: 15px;
+}
+
+.intro-text h1{
+	font-size: 48px;
+	margin-bottom: 28px;
+	color: rgb(51, 51, 51);
+}
+
+.intro-text p{
+	font-size: 16px;
+	line-height: 32px;
+	margin-bottom: 32px;
+	color: rgb(114, 114, 114);
+}
+
+.btn-call{
+	background-color: rgba(238, 67, 116, 1);
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 16px 48px;
+	border: none;
+}
+
+.btn-call:hover{
+	transition: all 0.3s ease 0s;
+	background-color: rgba(226,11,73,0.8);
+	box-shadow: 0 5px 30px rgba(238, 67, 116, 0.4);
+}
+
+.btn-gallery{
+	margin-left: 16px;
+	font-size: 16px;
+	border: none;
+	font-weight: 400;
+	background-color: transparent;
+	color: rgb(51, 51, 51);
+	padding: 16px 48px;
+}
+
+.btn-gallery:hover{
+	box-shadow: 0 5px 30px rgba(51, 51, 51, 0.199);
+}
+
+.cover {
+	/* border: 1px solid red; */
+	display: flex;
+}
+.img-front{
+	margin-right: -199px;
+	z-index: 1;
+}
+/* Ekstra 1 */
+.tim-wrapper {
+	background-color: #f7f7f7;
+	text-align: center;
+	height: 620px;
+}
+
+.container {
+	/* max-width: 1170px; */
+	/* padding: 0 15px; */
+	margin: 0 auto;
+}
+
+.heading {
+	padding: 10px 0;
+	background-color: rgba(226,11,73,0.8);
+	color: white;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.red {
+	color: rgba(226,11,73,0.8);
+}
+
+.tim {
+	margin: 30px 60px;
+}
+
+.profil {
+	width: 25%;
+	float: left;	
+}
+
+.avatar img {
+	height: 250px;
+	margin-bottom: 25px; 
+}
+
+.role {
+	margin-bottom: 25px;
+}
+
+.text-contents {	
+	font-size: 10px;
+	color: #b3aeb5;
+	margin-bottom: 25px;
+}
+/* Ekstra 2 */
+
+/* Footer */
+
 
 /* Ukuran tablet puyer */
-@media screen and (max-width: 791px) {
+@media screen and (max-width: 900px) {
+	#toggle-mobile {
+		display: flex;
+	}
 	.menu-toggle button {
 		display: block;
 	}
@@ -126,22 +263,26 @@ nav ul a:hover {
 		padding: 16px 5%;
 	}
 
+	header nav {
+	display: flex;
+	}
+
 	nav {
 		position: absolute;
 		right: 0;
 		flex-direction: column;
-		/* background-color: black; */
+		background-color: white;
 		height: 100vh;
 		width: 40%;
 		top: 60px;
 		align-items: center;
 		justify-content: space-evenly;
-		z-index: -1;
 		padding: 0 0 200px;
 		box-shadow: -4px 0 20px rgba(0, 0, 0, 0.075);
 		transform: translateX(100%);
 		animation: slide-out 0.5s;
 	}
+
 	nav ul {
 		flex-direction: column;
 		height: 30vh;

@@ -1,3 +1,3 @@
 function toggling() {
-	document.getElementById("toggle").classList.toggle("active");
+	document.getElementById("toggle-mobile").classList.toggle("active");
 }
