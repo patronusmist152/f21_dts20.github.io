@@ -287,6 +287,63 @@ main {
 
 /* Ekstra 2 */
 
+
+.container-fluid {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid h2{
+ color: black;
+    font-family: sans-serif;
+}
+
+.container-fluid h1{
+    color: rgba(226,11,73,0.8);
+}
+
+.container-fluid span {
+  color: rgba(226,11,73,0.8);
+}
+
+.container-fluid p{
+    margin: 0 40px;
+    font-family: sans-serif;
+}
+
+.extra-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+    background-color: whitesmoke;
+}
+
+.containerr {
+  width: 1170px;
+  padding: 20px 15px;
+  margin: 0 380px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+div.polar {
+  float: left;
+  border-radius: 25px;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+  object-position: center;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+    
+}
+
+
 /* Footer */
 footer {
     display: block;
