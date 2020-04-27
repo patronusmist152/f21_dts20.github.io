@@ -48,6 +48,38 @@ header nav {
 	color: rgb(51, 51, 51);
 }
 
+.top-wrapper{
+	background-image:url(https://static.wixstatic.com/media/4d07d1_a1590d625fd14c879d035051c65aa2d1~mv2.jpeg/v1/fill/w_630,h_420,al_c,q_80,usm_0.66_1.00_0.01/4d07d1_a1590d625fd14c879d035051c65aa2d1~mv2.webp);
+	background-size:cover;
+	color:white;
+	padding-top:  180px;
+	padding-bottom:210px;
+	text-align:right;
+  }
+  .container{
+	width:1170px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:10px;
+	padding-right:10px;
+  }
+  /*.container h1{
+	padding-bottom:10px;
+  }*/
+  .top-wrapper h1{
+	font-size:45px;
+	letter-spacing:5px;
+	margin-bottom:10px;
+	/*opacity:0.7;*/ 
+  }
+  .top-wrapper h2{
+	opacity:o.7;
+	margin-bottom:3px;
+  }
+  .top-wrapper p{
+	opacity:0.7;
+  }
+
 nav {
 	display: flex;
 	list-style: none;
@@ -543,5 +575,27 @@ footer {
 	}
 }
 
-/*=======CSS untuk Patch 1==============*/
-
+/* Untuk Tablet */
+@media(max-width: 1000px) {
+    .top-wrapper h1{
+      font-size:32px;
+     }
+     
+  }
+  /* Untuk Smartphone */
+@media(max-width: 670px) {
+    .header-right {
+      display: none;
+    }
+    .top-wrapper h1{
+        font-size:24px;
+        line-height:36px;
+      }
+      .top-wrapper h2{
+        font-size:14px;
+        line-height:20px;
+      }
+      .top-wrapper{
+        text-align:left
+      }
+}
