@@ -154,32 +154,30 @@ main {
 }
 
 .btn-call{
-	background-color: rgba(238, 67, 116, 1);
-	color: white;
-	font-weight: bold;
-	font-size: 16px;
-	padding: 16px 48px;
+	margin-left: 15px;
+	background-color: rgba(250,128,114,1.0);
+	border-radius: 5px;
 	border: none;
+	color: white;
+	margin-right: 16px;
+	height: 8vh;
+	width: 24vh;
 }
 
 .btn-call:hover{
-	transition: all 0.3s ease 0s;
-	background-color: rgba(226,11,73,0.8);
-	box-shadow: 0 5px 30px rgba(238, 67, 116, 0.4);
+	box-shadow: 0 5px 10px rgba(250,128,114,0.5);
 }
 
 .btn-gallery{
-	margin-left: 16px;
-	font-size: 16px;
+	height: 8vh;
+	width: 24vh;
 	border: none;
-	font-weight: 400;
-	background-color: transparent;
-	color: rgb(51, 51, 51);
-	padding: 16px 48px;
+	color: rgb(114, 114, 114);
+	border-radius: 5px;
 }
 
 .btn-gallery:hover{
-	box-shadow: 0 5px 30px rgba(51, 51, 51, 0.199);
+	box-shadow: 0 5px 10px rgb(114, 114, 114, 0.3);
 }
 
 .cover {
@@ -282,8 +280,6 @@ main {
 }
 
 /* Ekstra 2 */
-
-
 .container-fluid {
   width: auto;
   padding: 0;
@@ -435,12 +431,45 @@ footer {
   .left-footer{
   	float:none;
   	padding-bottom: 10px;
-  	} 
+  	}
   .right-footer{
   	float:none;
 	padding-bottom: 10px;
- 	}
+	 }
+	
+	 main {
+		 height: 1024px;
+	 }
 
+	 .img-back{
+		 transform: scale(0.8);
+	 }
+
+	 .img-front{
+		 transform: scale(0.8);
+	 }
+
+	 .intro-text h1{
+		 font-size: 32px;
+	 }
+
+	 .introduction p{
+		 font-size: 14px;
+	 }
+	 
+	 .content {
+		 flex-direction: column;
+	 }
+
+	 .cover {
+		 justify-content: center;
+		 margin-top: -64px;
+		 order: 1;
+	 }
+
+	 .introduction {
+		 order: 2;
+	 }
 }
 
 /* Ukuran mobile */
