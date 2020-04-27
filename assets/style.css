@@ -374,6 +374,20 @@ footer {
 		transform: translateX(0);
 		animation: slide-in 0.5s;
 	}
+
+  footer {
+    font-size:12px;
+    text-align: center;
+	}
+  .left-footer{
+  	float:none;
+  	padding-bottom: 10px;
+  	} 
+  .right-footer{
+  	float:none;
+	padding-bottom: 10px;
+ 	}
+
 }
 
 /* Ukuran mobile */
@@ -381,6 +395,19 @@ footer {
 	nav{
 		width: 100%;
 	}
+
+  footer {
+    font-size:11px;
+    text-align: center;
+	}
+  .left-footer{
+  	float:none;
+  	padding-bottom: 10px;
+  	} 
+  .right-footer{
+  	float:none;
+	padding-bottom: 10px;
+ 	}
 }
 
 
