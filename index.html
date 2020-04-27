@@ -1,163 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <script src="https://use.fontawesome.com/084407bb85.js"></script>
-    <title>Landing Page</title>
+
+    <title>Page Title</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-		<div class="logo-container">
-			<img src="https://i.ya-webdesign.com/images/rocket-logo-png-4.png" alt="logo" class="logo">
-			<h4>Rockode</h4>
-		</div>
+    
+    
+<div class="extra-wrapper">
+  <div class="container-fluid">
+        <div class="heading">
+          <br><h2>Our partner <br><span>———</span> </h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. <br>Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+        </div>
+   </div>
+    <div class="containerr">
+        <div class="polar">
+            <img class="a" src="kominfo.png" alt="Kominfo">
+            <p class="caption"></p>
+        </div>
 
-		<nav id="toggle">
-            <ul class="nav-links">
-                <li class="nav-link"><a href="#">Beranda</a></li>
-                <li class="nav-link"><a href="#">Tim</a></li>
-                <li class="nav-link"><a href="#">Produk</a></li>
-                <li class="nav-link"><a href="#">Kontak</a></li>
-            </ul>
+        <div class="polar">
+            <img class="b" src="dts.png" alt="Digital Talent Scholarship" >
+            <p class="caption"></p>
+        </div>
 
-            <div class="btn-group">
-                <button class="btn btn-sign-up">Daftar</button>
-                <button class="btn btn-sign-in">Masuk</button>
-            </div>
-        </nav>
+        <div class="polar">
+            <img class="a" src="progate.png" alt="Progate">
+            <p class="caption"></p>
+        </div> 
 
-		<div class="menu-toggle">
-            <button class="btn"  onclick="toggling()"><i class="fa fa-bars"></i></button>
-		</div>
-	</header>
-
-	<nav id="toggle-mobile">
-		<ul class="nav-links">
-			<li class="nav-link"><a href="#">Beranda</a></li>
-			<li class="nav-link"><a href="#">Tim</a></li>
-			<li class="nav-link"><a href="#">Produk</a></li>
-			<li class="nav-link"><a href="#">Kontak</a></li>
-		</ul>
-
-		<div class="btn-group">
-			<button class="btn btn-sign-up">Daftar</button>
-			<button class="btn btn-sign-in">Masuk</button>
-		</div>
-	</nav>
-	
-	<!--Kode untuk Bagian Home/Main/Banner tulis di bawah ini-->
-
-	<main>
-		<div class="content">
-			<div class="introduction">
-				<div class="intro-text">
-					<h1>We Craft Something Great for Your Company</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at assumenda possimus a, delectus porro, quis explicabo sed reprehenderit et magni officia. Dignissimos aspernatur, tempora recusandae tempore eligendi assumenda maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-
-				<div class="cta">
-					<button class="btn btn-call">Hubungi Kami</button>
-					<button class="btn btn-gallery">Lihat Galeri</button>
-				</div>
-			</div>
-
-			<div class="cover">
-				<img src="assets/img/window-1.svg" alt="window 1" class="img-front">
-				<img src="assets/img/window-2.svg" alt="window 2" class="img-back">
-			</div>
-		</div>
-	</main>
-		
-	<!--Kode untuk Bagian Ekstra 1 tulis di bawah ini-->
-		<div class="tim-wrapper">
-			<div class="container">
-				<div class="heading">
-					<h2>Tim yang<span class="italic"> handal </span>&<span class="italic"> profesional!</span></h2>
-				</div>
-
-				<div class="tim">
-					<div class="profil">
-						<div class= "avatar">	
-						<img src="assets/img/profil 1.png">
-						</div>
-						<div class="role">
-						<h3>Ramadhan</h3>
-						<h3 class="italic red">Project Manager</h3>
-						</div>
-						<p class="txt-contents">Etiam tempor orci eu lobortis elementum nibh tellus molestie. Neque egestas congue quisque egestas. Egestas integer eget aliquet nibh praesent tristique.</p>
-					</div>
-	
-					<div class="profil">
-						<div class="avatar">  
-						<img src="assets/img/profil 2.png">
-						</div>
-						<div class="role">
-						<h3>Astrid</h3>
-						<h3 class="italic red">UI/UX Designer</h3>
-						</div>
-						<p class="txt-contents">Etiam tempor orci eu lobortis elementum nibh tellus molestie. Neque egestas congue quisque egestas. Egestas integer eget aliquet nibh praesent tristique.</p>
-					</div>
-
-					<div class="profil">
-						<div class="avatar">  
-						<img src="assets/img/profil 3.png">
-						</div>
-						<div class="role">
-						<h3>Lutfi Nurbaiti</h3>
-						<h3 class="italic red">Developer</h3>
-						</div>
-						<p class="txt-contents">Etiam tempor orci eu lobortis elementum nibh tellus molestie. Neque egestas congue quisque egestas. Egestas integer eget aliquet nibh praesent tristique.</p>
-					</div>
-
-					<div class="profil">
-						<div class="avatar">  
-						<img src="assets/img/profil 4.png">
-						</div>
-						<div class="role">
-						<h3>Meidhita</h3>
-						<h3 class="italic red">Content Specialist</h3>
-						</div>
-						<p class="txt-contents">Etiam tempor orci eu lobortis elementum nibh tellus molestie. Neque egestas congue quisque egestas. Egestas integer eget aliquet nibh praesent tristique.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-	<!--Kode untuk Bagian Ekstra 2 tulis di bawah ini-->
-	
-		<div class="extra-wrapper">
-  			<div class="container-fluid">
-        			<div class="heading">
-          				<br><h2>Our partner <br><span>———</span> </h2>
-            				<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. <br>Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. <br>Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        			</div>
-   			</div>
-    			<div class="containerr">
-        			<div class="polar">
-            				<img src="kominfo.png" alt="Kominfo" width="80px" height="80px">
-            				<p class="caption"></p>
-        			</div>
-        			<div class="polar">
-           			 	<img src="dts.png" alt="Digital Talent Scholarship" width="80px" height="70px" >
-            				<p class="caption"></p>
-        			</div>
-        			<div class="polar">
-            				<img src="progate.png" alt="Progate" width="80px" height="80px">
-            				<p class="caption"></p>
-        			</div> 
-         			<div class="polar">
-            				<img src="github.png" alt="Github" width="80px" height="80px">
-            				<p class="caption"></p>
-        		 	</div> 
-    			</div>
-		</div>
-	
-	<!--Kode untuk Bagian Footer tulis di bawah ini-->
-
+         <div class="polar">
+            <img class="a" src="github.png" alt="Github">
+            <p class="caption"></p>
+         </div> 
+        
+         <div class="polar">
+            <img class="b" src="google.png" alt="Google" >
+            <p class="caption"></p>
+         </div>
+    </div>
+</div>
+    
 </body>
-<script src="assets/script.js"></script>
 </html>
