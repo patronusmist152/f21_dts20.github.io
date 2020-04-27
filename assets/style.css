@@ -247,7 +247,7 @@ main {
 }
 
 .container-fluid h2{
- color: black;
+ color: white;
     font-family: sans-serif;
 }
 
@@ -256,19 +256,20 @@ main {
 }
 
 .container-fluid span {
-  color: rgba(226,11,73,0.8);
+	color: rgba(226,11,73,0.8);
 }
 
 .container-fluid p{
     margin: 0 40px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 
 .extra-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
-    background-color: whitesmoke;
+	background-color: whitesmoke;
+	margin-top: 32px;
 }
 
 .containerr {
