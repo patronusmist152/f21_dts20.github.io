@@ -1,0 +1,25 @@
+/* Untuk Tablet */
+@media(max-width: 1000px) {
+    .top-wrapper h1{
+      font-size:32px;
+     }
+     
+  }
+  /* Untuk Smartphone */
+@media(max-width: 670px) {
+    .header-right {
+      display: none;
+    }
+    .top-wrapper h1{
+        font-size:24px;
+        line-height:36px;
+      }
+      .top-wrapper h2{
+        font-size:14px;
+        line-height:20px;
+      }
+      .top-wrapper{
+        text-align:left
+      }
+
+}
