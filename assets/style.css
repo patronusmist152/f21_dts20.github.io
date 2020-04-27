@@ -312,10 +312,10 @@ main {
 }
 
 .containerr {
-  width: 1170px;
+  width: auto;
   padding: 20px 15px;
-  margin: 0 380px;
-  display: flex;
+  margin: 0 23%;
+  display: inline-block;
   flex-direction: row;
   
 }
@@ -325,14 +325,25 @@ div.polar {
   border-radius: 25px;
   width: 80px;
   height: 80px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 5px 5px 15px 20px;
   object-position: center;
   padding: 10px 10px 10px 10px;
-  border: 1px solid #BFBFBF;
+  border: 0.5px solid #BFBFBF;
   background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
-    
+  box-shadow: 10px 10px 5px #aaaaaa;    
+}
+
+img.a {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+img.b {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 0px 0px 0px;
+  height: 40%;
 }
 
 
