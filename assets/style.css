@@ -183,6 +183,7 @@ main {
 .cover {
 	/* border: 1px solid red; */
 	display: flex;
+	justify-content: center;
 }
 .img-front{
 	margin-right: -199px;
@@ -443,7 +444,17 @@ footer {
 	
 	.profil {
 		width: 30%;
-	}	
+	}
+
+	.btn-call {
+		width: 18vh;
+		height: 6vh;
+	}
+
+	.btn-gallery {
+		width: 18vh;
+		height: 6vh;
+	}
 }
 
 /* Ukuran mobile */
