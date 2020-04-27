@@ -77,10 +77,6 @@ nav ul a:hover {
 	z-index: 98;
 }
 
-.btn-group {
-	/* border: 1px solid red; */
-}
-
 .btn{
 	width: 16vh;
 	height: 5vh;
@@ -158,32 +154,30 @@ main {
 }
 
 .btn-call{
-	background-color: rgba(238, 67, 116, 1);
-	color: white;
-	font-weight: bold;
-	font-size: 16px;
-	padding: 16px 48px;
+	margin-left: 15px;
+	background-color: rgba(250,128,114,1.0);
+	border-radius: 5px;
 	border: none;
+	color: white;
+	margin-right: 16px;
+	height: 8vh;
+	width: 24vh;
 }
 
 .btn-call:hover{
-	transition: all 0.3s ease 0s;
-	background-color: rgba(226,11,73,0.8);
-	box-shadow: 0 5px 30px rgba(238, 67, 116, 0.4);
+	box-shadow: 0 5px 10px rgba(250,128,114,0.5);
 }
 
 .btn-gallery{
-	margin-left: 16px;
-	font-size: 16px;
+	height: 8vh;
+	width: 24vh;
 	border: none;
-	font-weight: 400;
-	background-color: transparent;
-	color: rgb(51, 51, 51);
-	padding: 16px 48px;
+	color: rgb(114, 114, 114);
+	border-radius: 5px;
 }
 
 .btn-gallery:hover{
-	box-shadow: 0 5px 30px rgba(51, 51, 51, 0.199);
+	box-shadow: 0 5px 10px rgb(114, 114, 114, 0.3);
 }
 
 .cover {
@@ -193,6 +187,11 @@ main {
 .img-front{
 	margin-right: -199px;
 	z-index: 1;
+	animation: img-front 1s ease;
+}
+
+.img-back {
+	animation: img-back 1s ease;
 }
 /* Ekstra 1 */
 .heading {
@@ -246,9 +245,96 @@ main {
 }
 
 /* Ekstra 2 */
+.container-fluid {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid h2{
+ color: black;
+    font-family: sans-serif;
+}
+
+.container-fluid h1{
+    color: rgba(226,11,73,0.8);
+}
+
+.container-fluid span {
+  color: rgba(226,11,73,0.8);
+}
+
+.container-fluid p{
+    margin: 0 40px;
+    font-family: sans-serif;
+}
+
+.extra-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+    background-color: whitesmoke;
+}
+
+.containerr {
+  width: 1170px;
+  padding: 20px 15px;
+  margin: 0 380px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+div.polar {
+  float: left;
+  border-radius: 25px;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+  object-position: center;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+    
+}
+
 
 /* Footer */
+footer {
+    display: block;
+  	background-color: white;
+ 	border-top: 1px solid #eee;
+  	height: 55px;
+	width: 100%;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+ 	font-size: 13px;
+}
 
+.left-footer {
+  float: left;
+}
+
+.right-footer {
+  float: right;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline-block;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
 
 /* Ukuran tablet puyer */
 @media screen and (max-width: 900px) {
@@ -302,6 +388,57 @@ main {
 		transform: translateX(0);
 		animation: slide-in 0.5s;
 	}
+	
+	.profil {
+	width: 50%;
+	text-align: center;
+
+  footer {
+    font-size:12px;
+    text-align: center;
+	}
+  .left-footer{
+  	float:none;
+  	padding-bottom: 10px;
+  	}
+  .right-footer{
+  	float:none;
+	padding-bottom: 10px;
+	 }
+	
+	 main {
+		 height: 1024px;
+	 }
+
+	 .img-back{
+		 transform: scale(0.8);
+	 }
+
+	 .img-front{
+		 transform: scale(0.8);
+	 }
+
+	 .intro-text h1{
+		 font-size: 32px;
+	 }
+
+	 .introduction p{
+		 font-size: 14px;
+	 }
+	 
+	 .content {
+		 flex-direction: column;
+	 }
+
+	 .cover {
+		 justify-content: center;
+		 margin-top: -64px;
+		 order: 1;
+	 }
+
+	 .introduction {
+		 order: 2;
+	 }
 }
 
 /* Ukuran mobile */
@@ -311,10 +448,23 @@ main {
 	}
 	
 	.profil {
-	width: 33.33%;
+	width: 100%;
 	text-align: center;
 }
 	
+
+  footer {
+    font-size:11px;
+    text-align: center;
+	}
+  .left-footer{
+  	float:none;
+  	padding-bottom: 10px;
+  	} 
+  .right-footer{
+  	float:none;
+	padding-bottom: 10px;
+ 	}
 }
 
 
@@ -338,4 +488,30 @@ main {
 		transform: translateX(100%);
 	}
 }
+
+@keyframes img-front {
+	0% {
+		opacity: 0;
+		transform: translateX(-80px);
+	}
+
+	100% {
+		transform: translateX(0px);
+		opacity: 100%;
+	}
+}
+
+@keyframes img-back {
+	0% {
+		opacity: 0;
+		transform: translateX(80px);
+	}
+
+	100% {
+		transform: translateX(0px);
+		opacity: 100%;
+	}
+}
+
+/*=======CSS untuk Patch 1==============*/
 
