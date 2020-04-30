@@ -518,7 +518,8 @@ footer {
 		 height: 8vh;
 	 }
 
-	 	.container {
+	 /*hapus css ini
+	.container {
 		display: flex;
 		flex-wrap: wrap;
 		align-item: baseline;
@@ -526,7 +527,7 @@ footer {
 	
 	.profil {
 		width: 30%;
-	}
+	}*/
 }
 
 
